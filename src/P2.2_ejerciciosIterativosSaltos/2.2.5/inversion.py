@@ -6,4 +6,3 @@ def capitalObtenido(cantInvertir, interes, numTiempo):
 
     return "{:.2f}€".format(cantInvertir)
 
-print(capitalObtenido(1500, 20, 5))
