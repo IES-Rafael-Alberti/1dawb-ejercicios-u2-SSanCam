@@ -1,9 +1,3 @@
-"""
-Ejercicio 2.1.1
-
-Escribir un programa que pregunte al usuario su edad y muestre por pantalla si es mayor de edad o no.
-"""
-
 def pedirEdad():
     """
     Pedir la edad y comprobar que se trata de un número entero entre 1 y 125.
