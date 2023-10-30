@@ -11,5 +11,5 @@ from src.P2_1_3_division import op_division
     ]
 )
 
-def test_division(numero1, numero2, expected):
+def test_P2_1_3_division(numero1, numero2, expected):
     assert op_division(numero1, numero2) == expected
