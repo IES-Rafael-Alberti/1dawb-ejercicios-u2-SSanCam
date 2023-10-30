@@ -1,7 +1,4 @@
-"""
-Escribir un programa que pregunte al usuario su edad y muestre por pantalla si es mayor de edad o no.
-"""
-def edad(anios: int):
+def edad(anios):
     
     if (anios > 0 ):
         
@@ -14,3 +11,11 @@ def edad(anios: int):
             mensaje = "Relája, Nosferatus."
             
         return mensaje
+    
+def main() :
+    anios = int(input("Introduce tu edad: "))
+    resultado = edad(anios)
+    print(resultado)
+
+if __name__=="__main__":
+    main()
