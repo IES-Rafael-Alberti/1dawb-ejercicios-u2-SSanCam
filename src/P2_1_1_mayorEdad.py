@@ -1,21 +1,10 @@
-def edad(anios):
+"""Escribir un programa que pregunte al usuario su edad y muestre por pantalla si es mayor de edad o no."""
+def mayoriaEdad(edad: int):
     
-    if (anios > 0 ):
-        
-        if (anios >= 18):
-            mensaje = "Eres mayor de edad."
-        else:
-            mensaje = "Eres menor de edad."
-            
-        if (anios > 100):
-            mensaje = "Relája, Nosferatus."
-            
-        return mensaje
-    
-def main() :
-    anios = int(input("Introduce tu edad: "))
-    resultado = edad(anios)
-    print(resultado)
+    if (edad >= 18):
+        return "Eres mayor de edad."
+    elif (edad < 18):
+        return "Eres menor de edad."
+    elif (edad > 100):
+        return "Relája Nosferatu."
 
-if __name__=="__main__":
-    main()
