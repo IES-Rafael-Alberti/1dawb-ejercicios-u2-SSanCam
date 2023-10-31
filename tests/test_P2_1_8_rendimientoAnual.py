@@ -12,3 +12,8 @@ from src.P2_1_8_rendimientoAnual import evaluacionAnual
 
 def test_P2_1_8_rendimientoAnual(puntuacion, expected):
     assert evaluacionAnual(puntuacion) == expected
+    
+def test_rendimiento_anual():
+    assert evaluacionAnual(0.0) == "0.00€"
+    assert evaluacionAnual(0.4) == "960.00€"
+    assert evaluacionAnual(0.6) == "1440.00€"
