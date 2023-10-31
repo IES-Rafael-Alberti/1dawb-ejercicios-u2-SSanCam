@@ -12,38 +12,36 @@ def pedidoPizza(tipoPizza, ingrediente):
         pizzaPedida = "Vegetariana."
 
         if ingrediente == 1:
-            condumio = "1.-Pimientos"
+            condumio = "1.-Pimientos."
             
         elif ingrediente == 2:
-            condumio = "2.-Tofu"
+            condumio = "2.-Tofu."
             
             
     elif tipoPizza.upper() == "NV":
         pizzaPedida = "No vegetariana."
         
         if ingrediente == 1:
-            condumio = "peperoni"
+            condumio = "1.-Peperoni."
             
         elif ingrediente == 2:
-            condumio = "jamón"
+            condumio = "2.-Jamón."
             
         elif ingrediente == 3:
-            condumio = "salmón."
+            condumio = "3.-Salmón."
             
     cabecera1 = "**************************"
     ancho = len(cabecera1)
-            
     nombre =("--BELLA NAPOLI--".center(ancho))
-    
     opcion = (f"Has elegido pizza:\n--{pizzaPedida}").center(ancho)
-    
     ingredientePedido =(f"Los ingredientes son: \n\n1.-Salsa de tomate\n2.-Queso\n{condumio}").center(ancho)
     
     ticket = (f"{cabecera1}\n{nombre}\n{cabecera1}\n{opcion}\n\n{ingredientePedido}\n{cabecera1}\n")
+    print (ticket)
     
-    return ticket
+    return condumio
 
-#############################################################
+######################___MAIN___######################
 
 def main():
     
