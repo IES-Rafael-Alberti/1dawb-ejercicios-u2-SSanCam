@@ -9,7 +9,7 @@ def pedidoPizza(tipoPizza, ingrediente):
     condumio = ""
 
     if tipoPizza.upper() == "V":
-        pizzaPedida = "Vegetariana."
+        pizzaPedida = "Vegetariana"
 
         if ingrediente == 1:
             condumio = "1.-Pimientos."
@@ -19,7 +19,7 @@ def pedidoPizza(tipoPizza, ingrediente):
             
             
     elif tipoPizza.upper() == "NV":
-        pizzaPedida = "No vegetariana."
+        pizzaPedida = "No vegetariana"
         
         if ingrediente == 1:
             condumio = "1.-Peperoni."
@@ -33,10 +33,10 @@ def pedidoPizza(tipoPizza, ingrediente):
     cabecera1 = "**************************"
     ancho = len(cabecera1)
     nombre =("--BELLA NAPOLI--".center(ancho))
-    opcion = (f"Has elegido pizza:\n--{pizzaPedida}").center(ancho)
+    opcion = (f"Has elegido pizza:\n--{pizzaPedida}--").center(ancho)
     ingredientePedido =(f"Los ingredientes son: \n\n1.-Salsa de tomate\n2.-Queso\n{condumio}").center(ancho)
     
-    ticket = (f"{cabecera1}\n{nombre}\n{cabecera1}\n{opcion}\n\n{ingredientePedido}\n{cabecera1}\n")
+    ticket = (f"{cabecera1}\n{nombre}\n{cabecera1}\n{opcion}\n\n{ingredientePedido}\n\n{cabecera1}\n")
     print (ticket)
     
     return condumio
