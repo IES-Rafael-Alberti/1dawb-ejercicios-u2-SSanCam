@@ -5,12 +5,28 @@ triángulo rectángulo como el de más abajo.
 5 3 1
 7 5 3 1
 9 7 5 3 1"""
-def trianguloRegresivo(niveles):
+def trianguloRegresivo(numero):
     nivel = 1
+    serie = ""
     
-    while (nivel != niveles):
-        for numero in range(niveles, 1, -2):
-            print(str(numero) + " ")
-            nivel += 1
+    while (nivel <= numero):
+        
+        for num in range(nivel, 0, -2):
+            serie += (str(num)) + " "
+            
+        serie += "\n"
+        nivel += 2  
+        
+    return serie
 
-print(trianguloRegresivo(5))
+def main():
+    
+    print("Ingresa un número entero cualquiera: ")
+    numero = int(input())
+    
+    resultado = (trianguloRegresivo(numero))
+    
+    return resultado
+    
+if __name__=="__main__":
+    main()
