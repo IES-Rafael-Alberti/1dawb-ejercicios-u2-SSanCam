@@ -21,7 +21,7 @@ def main():
     
     resultado = precioEntrada(edad)
     
-    print(f"Para la edad de {edad}, le corresponde una entrada de {resultado}")
+    print(f"Para la edad de {edad} años, le corresponde una entrada de {resultado}")
     
 if __name__=="__main__":
     main()
