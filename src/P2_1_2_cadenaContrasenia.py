@@ -5,7 +5,7 @@ por el usuario coincide con la guardada en la variable sin tener en cuenta mayú
 def iniciarSesion(cadena: str):
     contraseña = "aytortilla"
     
-    if (cadena.lower().replace(" ","") == contraseña):
+    if (cadena.replace(" ","").lower() == contraseña):
         return ("Contraseña correcta!")
         
     else:

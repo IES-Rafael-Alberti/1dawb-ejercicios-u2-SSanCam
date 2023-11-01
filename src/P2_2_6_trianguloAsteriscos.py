@@ -5,9 +5,7 @@ def triangulo(niveles):
     while (estrellas != niveles+1):
         triangulo = triangulo + (f"{"*" * estrellas}\n")
         estrellas += 1
-        
-    
-    
+           
     return triangulo
 
 def main():

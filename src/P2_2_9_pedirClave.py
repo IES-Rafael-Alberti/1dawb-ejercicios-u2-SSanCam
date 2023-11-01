@@ -1,28 +1,18 @@
 """Escribir un programa que almacene la cadena de caracteres contraseña en una variable,
 pregunte al usuario por la contraseña hasta que introduzca la contraseña correcta."""
+def comprobarClave(clave):
+    from src.P2_1_2_cadenaContrasenia import iniciarSesion
+    return iniciarSesion(clave.replace(" ", "").lower())
 
-def pedirClave(clave):
+def main():
+    print("Introduce tu contraseña: ")
+    clave = str(input()).replace(" ", "").lower()
     
-    from P2_1_2_cadenaContrasenia import iniciarSesion
-    clave = str(input()).replace(" ", "")
+    while comprobarClave(clave) != "Contraseña correcta!":
+        print("ERROR.\nIntroduce de nuevo la contraseña: ")
+        clave = str(input()).replace(" ", "").lower()
     
-    while (iniciarSesion(clave) != "Contraseña correcta!"):
-        print("Intenta introducir de nuevo la contraseña: ")
-        clave = str(input()).replace(" ", "")
-    
-    return "Contraseña correcta!"
-    
+    print("Acceso concedido.")
 
-print(pedirClave("ay TOR tilla"))
-####__MAIN__####
-
-"""def main():
-    
-    print("Introduce tu clave: ")
-    clave = str(input()).replace(" ", "")
-    
-    if (pedirClave(clave)) == "Contraseña correcta!" :
-        return "Contraseña correcta!" 
-    
-if __name__=="__main__":
-    main()"""
+if __name__ == "__main__":
+    main()
