@@ -1,6 +1,7 @@
 """Escribir un programa que almacene la cadena de caracteres contraseña en una variable,
 pregunte al usuario por la contraseña hasta que introduzca la contraseña correcta."""
-def comprobarClave(clave):
+def comprobarClave(clave: str) -> str:
+    
     from src.P2_1_2_cadenaContrasenia import iniciarSesion
     return iniciarSesion(clave.replace(" ", "").lower())
 

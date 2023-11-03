@@ -1,3 +1,5 @@
+"""Leer números enteros de teclado, hasta que el usuario ingrese el 0. 
+Finalmente, mostrar la sumatoria de todos los números ingresados."""
 def sumaTotal():
     
     print("Ingresa los números que quieras sumar, introduce 0 si quieres acabar.")
