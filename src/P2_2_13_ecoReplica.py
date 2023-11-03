@@ -15,7 +15,7 @@ def eco(repetir):
             break   
 
 def main():
-    
+    print("Escribe \"salir\" si quieres finalizar el programa.")
     print("Introduce palabras y las iré repitiendo: ")
     repetir = str(input())
     
