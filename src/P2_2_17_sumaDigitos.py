@@ -5,7 +5,7 @@ def sumaNum(numero):
     for num in (lista_num[:]):
         suma_digitos += (int(num))
         
-    return suma_digitos 
+    return int(suma_digitos) 
 
 
 

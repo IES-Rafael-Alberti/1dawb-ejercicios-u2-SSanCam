@@ -13,6 +13,7 @@ def mayor_num_positivo(numero):
     if (numero == 0):
         print(f"De todos los números que has ingresado, el mayor número positivo ha sido: {max(lista_numero)}")
         num_mayor = max(lista_numero)
+    
     return num_mayor
 
 
