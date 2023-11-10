@@ -13,7 +13,7 @@ def cont_num_titulos(titulo: str) -> str:
         for numero in titulo:
             if numero in digitos:
                 total_digitos += 1
-        titulo = str(input())   
+        titulo = str(input("Título: "))   
         linea += 1
     if (total_digitos == 1):
         num = "número"
@@ -29,7 +29,7 @@ def cont_num_titulos(titulo: str) -> str:
 def main():
     
     print("Ingresa el titulo de un libro o introduce \'/\'")
-    titulo = str(input())
+    titulo = str(input("Título: "))
     
     resultado = cont_num_titulos(titulo)
     
