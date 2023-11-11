@@ -1,7 +1,7 @@
 """Crear un programa que solicite el ingreso de números enteros positivos, hasta que el usuario ingrese el 0. 
 Por cada número, informar cuántos dígitos pares y cuántos impares tiene. 
 Al finalizar, informar la cantidad de dígitos pares y de dígitos impares leídos en total."""
-lista_numeros = []
+"""lista_numeros = []
 cadena_numeros = ""
 suma_pares = 0
 suma_impares = 0
@@ -18,4 +18,4 @@ while seguir:
         
         lista_numeros.append(numero)
         
-print (lista_numeros)
+print (lista_numeros)"""
