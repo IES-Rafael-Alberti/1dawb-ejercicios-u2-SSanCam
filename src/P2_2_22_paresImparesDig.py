@@ -9,11 +9,8 @@ def tipo_entrada(numero: int) -> str:
     suma_pares = 0
     suma_impares = 0
     
-    while (type(numero) != int):
-        numero = int(input())
-    
     while (numero != 0) and (numero < 10):
-        
+        cadena_numeros = cadena_numeros + str(numero) + ", "
         for digito in str(numero):
             
             if (int(digito)%2 == 0):
@@ -25,6 +22,8 @@ def tipo_entrada(numero: int) -> str:
         numero = int(input())
         
     while (numero != 0) and (numero > 9):
+        cadena_numeros = cadena_numeros + str(numero) + ", "
+
         for digito in str(numero):
             
             if (int(digito)%2 == 0):
@@ -34,7 +33,7 @@ def tipo_entrada(numero: int) -> str:
         print("Ingresa otro numero o 0 para finalizar: ")
         numero = int(input())
     
-    resultado = f"De todos los numeros ingresados:\n{suma_impares} han sido digitos impares.\n{suma_pares} han sido digitos pares."
+    resultado = f"De todos los numeros ingresados ({cadena_numeros[:-2]}) \n{suma_impares} han sido digitos impares.\n{suma_pares} han sido digitos pares."
 
     return resultado
 
